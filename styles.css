@@ -1,0 +1,56 @@
+/* global styling */
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: black !important;
+  min-height: 100vh;
+}
+
+/* nav-bar styling */
+.nav-ul {
+  font-size: 1.2rem !important;
+  font-weight: 600;
+}
+
+.nav-item :hover {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navbar-typewriter {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid #ffc107; /* yellow */
+  font-family: monospace;
+  font-size: 1.2rem;
+  min-width: 200px;
+  max-width: 400px;
+}
+.nav-bar-ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-toggler{
+    background-color: #ffc107 !important;
+}
+
+/* responsiveness */
+@media screen and (max-width: 768px) {
+  .navbar-typewriter {
+    display: none; /* Hide typewriter effect on smaller screens */
+  }
+    
+}
+
+
