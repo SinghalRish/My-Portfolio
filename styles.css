@@ -322,6 +322,71 @@ i {
   }
 }
 
+.contact{
+    padding-top: 40px;
+
+    .heading {
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: bold;
+
+      span{
+        color: #ffc107;
+        font-size: 2.5rem;
+      }
+    }
+    .para {
+      text-align: center;
+      color: white;
+      font-size: 1.2rem;
+      opacity: 0.8;
+      padding: 0 20px;
+    }
+    /* Contact Form Custom Styles */
+form input,
+form textarea {
+  background-color: transparent;
+  color: #ffc107;
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+form input:focus,
+form textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-color: #ffc107;
+  background-color: transparent;
+  color: white;
+}
+
+/* Submit button */
+form button {
+  background-color: transparent;
+  color: #ffc107;
+  border: 1px solid #ffc107;
+  padding: 10px 25px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background-color: #ffc107;
+  color: black;
+}
+}
+
+
+
+
+
 /* responsiveness */
 @media screen and (max-width: 768px) {
   .navbar-typewriter {
