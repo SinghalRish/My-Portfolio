@@ -97,13 +97,17 @@ a {
     display: flex;
   }
 
-  .resume-button {
+  .resume-button,
+  .dropdown-toggle {
     padding: 1rem;
     border-radius: 10px;
     font-size: large;
     background-color: transparent;
     border: 1px solid #ffc107;
-    color: white;
+    color: #ffc107;
+  }
+  .dropdown-item {
+    border-color: transparent;
   }
 }
 
@@ -231,16 +235,15 @@ i {
   display: flex;
   flex-direction: column;
   gap: 30px;
-  .image{
-            margin: auto;
+  .image {
+    margin: auto;
 
-    img{
-        width: 100px;
-        height: 100px;
+    img {
+      width: 100px;
+      height: 100px;
     }
   }
   .card-body {
-   
     .card-text {
       opacity: 0.8;
     }
@@ -250,9 +253,9 @@ i {
       opacity: 1 !important;
     }
 
-    .card-button{
-        background: transparent;
-        border: 1px solid #ffc107;
+    .card-button {
+      background: transparent;
+      border: 1px solid #ffc107;
     }
   }
 
@@ -277,6 +280,7 @@ i {
     }
   }
 }
+
 /* responsiveness */
 @media screen and (max-width: 768px) {
   .navbar-typewriter {
@@ -287,9 +291,42 @@ i {
     margin-top: 20px;
     justify-content: center;
     .photo {
-      height: 250px;
-      width: 250px;
+      height: 200px;
+      width: 200px;
     }
+  }
+  .left {
+    padding: 0rem 2rem;
+    .content {
+      gap: 5px;
+    }
+    h1 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    p {
+      font-size: 0.9rem;
+    }
+    .links-main {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+
+      .resume {
+        width: 100%;
+        text-align: center;
+      }
+
+      .resume-button {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+  .services {
+    padding-top: 20px;
   }
 }
 
