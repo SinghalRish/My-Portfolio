@@ -14,6 +14,19 @@ a {
   color: #ffc107 !important;
 }
 /* nav-bar styling */
+.navbar {
+  position: sticky !important;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* From https://css.glass */
+  background: rgba(72, 64, 64, 0.23) !important;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.2px);
+  -webkit-backdrop-filter: blur(6.2px);
+  border: 1px solid rgba(72, 64, 64, 0.41);
+}
 .nav-ul {
   font-size: 1.2rem !important;
   font-weight: 600;
@@ -50,10 +63,12 @@ a {
 /* //main section styling */
 .main {
   display: flex;
+  flex-wrap: wrap;
   min-height: 100px;
   padding-top: 2rem;
 }
 
+/* left section of main  */
 .left {
   padding: 0rem 5rem;
   flex: 1.5;
@@ -88,9 +103,11 @@ a {
     font-size: large;
     background-color: transparent;
     border: 1px solid #ffc107;
-    color: #ffc107;
+    color: white;
   }
 }
+
+/* for social icons under social classss */
 .socials {
   display: flex;
   align-items: center;
@@ -98,13 +115,15 @@ a {
     padding: 1rem;
   }
 }
+
+/* for all icons */
 i {
   color: white;
   opacity: 0.8;
   font-size: 1.5rem;
   cursor: pointer;
 }
-
+/* right section of main  */
 .right {
   flex: 1;
   display: flex;
@@ -116,7 +135,7 @@ i {
     height: 350px;
     width: 350px;
     border: 1px solid #ffc107;
-    object-fit: contain;
+    object-fit: cover;
 
     img {
       height: 100%;
@@ -126,9 +145,110 @@ i {
   }
 }
 
+.services {
+  display: flex;
+  flex-direction: column;
+  padding-top: 5rem;
+
+  .heading {
+    padding: 2rem;
+    width: 100%;
+    text-align: center;
+    color: white;
+  }
+
+  .service-cards {
+    gap: 20px;
+
+    .card {
+      .icon-service {
+        font-size: 4rem;
+      }
+      h3,
+      p {
+        text-align: center;
+      }
+      p {
+        opacity: 0.8;
+      }
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
+      padding: 1rem;
+      background-color: black !important;
+      box-shadow: 0 4px 8px rgba(233, 232, 232, 0.863);
+      color: white !important;
+    }
+  }
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+
+  .heading {
+    text-align: center;
+    color: white;
+  }
+  .container-skill {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+  .skill-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgb(31, 27, 27);
+    /* box-shadow: 0 4px 8px rgba(235, 231, 231, 0.932); */
+    transition: all 0.3s ease;
+    transition: all 0.5s ease;
+    cursor: pointer;
+
+    img {
+      width: 60px;
+      height: auto;
+      object-fit: cover;
+      filter: drop-shadow(0px 20px 35px rgba(221, 255, 0, 0.2));
+    }
+  }
+}
+
 /* responsiveness */
 @media screen and (max-width: 768px) {
   .navbar-typewriter {
     display: none; /* Hide typewriter effect on smaller screens */
+  }
+
+  .right {
+    margin-top: 20px;
+    justify-content: center;
+    .photo {
+      height: 250px;
+      width: 250px;
+    }
+  }
+}
+
+@media screen and (max-width: 985px) {
+  .navbar-typewriter {
+    display: none; /* Hide typewriter effect on smaller screens */
+  }
+  .right {
+    margin-top: 20px;
+    justify-content: center;
+    .photo {
+      height: 250px;
+      width: 250px;
+    }
   }
 }
