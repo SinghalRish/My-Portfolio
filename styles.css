@@ -145,6 +145,7 @@ i {
   }
 }
 
+/* services section styling */
 .services {
   display: flex;
   flex-direction: column;
@@ -184,6 +185,7 @@ i {
   }
 }
 
+/* skills section styling */
 .skills {
   display: flex;
   flex-direction: column;
@@ -223,6 +225,58 @@ i {
   }
 }
 
+/* project section sstyling */
+.project {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  .image{
+            margin: auto;
+
+    img{
+        width: 100px;
+        height: 100px;
+    }
+  }
+  .card-body {
+   
+    .card-text {
+      opacity: 0.8;
+    }
+    span {
+      color: #ffc107;
+      font-weight: bolder !important;
+      opacity: 1 !important;
+    }
+
+    .card-button{
+        background: transparent;
+        border: 1px solid #ffc107;
+    }
+  }
+
+  .heading,
+  .para {
+    text-align: center;
+    color: white;
+  }
+  .para {
+    p {
+      opacity: 0.8;
+    }
+  }
+
+  .project-container {
+    gap: 20px;
+    flex-wrap: wrap;
+    .card {
+      background-color: rgb(31, 27, 27);
+      border-radius: 10px;
+      color: white;
+    }
+  }
+}
 /* responsiveness */
 @media screen and (max-width: 768px) {
   .navbar-typewriter {
