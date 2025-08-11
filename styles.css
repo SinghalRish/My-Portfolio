@@ -383,9 +383,17 @@ form button:hover {
 }
 }
 
-
-
-
+.greetings{
+    text-align: center;
+    color: white;
+    font-size: large;
+    p{
+        span{
+            color: #ffc107;
+            font-size:1.5rem;
+        }
+    }
+}
 
 /* responsiveness */
 @media screen and (max-width: 768px) {
