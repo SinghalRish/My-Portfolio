@@ -1,6 +1,14 @@
+// initializing aos
+AOS.init();
 
 // typewriter-text logic
-const texts = ["Hi, I'm Rishabh Singhal ", "Your Web Developer", "Frontend Specialist with expertise in Angular", "Building Scalable Web Applications", "Crafting Seamless User Experiences"];
+const texts = [
+  "Hi, I'm Rishabh Singhal ",
+  "Your Web Developer",
+  "Frontend Specialist with expertise in Angular",
+  "Building Scalable Web Applications",
+  "Crafting Seamless User Experiences",
+];
 let count = 0;
 let index = 0;
 let currentText = "";
@@ -25,4 +33,3 @@ let letter = "";
     setTimeout(type, 80);
   }
 })();
-

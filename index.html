@@ -21,6 +21,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- Cdn for AOS library   -->
+   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+   <!-- cdn for animate css -->
+     <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   </head>
   <body>
     <!-- nav-bar -->
@@ -125,7 +132,7 @@
         </div>
       </div>
       <div class="right">
-        <div class="photo"><img src="/images/logo.png " alt="" /></div>
+        <div class="photo" data-aos="flip-right" data-aos-duration="2000" ><img src="/images/logo.png " alt="" /></div>
       </div>
     </div>
     <!-- main section ends -->
@@ -136,7 +143,7 @@
       <div
         class="container-fluid d-flex justify-content-center flex-wrap service-cards"
       >
-        <div class="card bg-black" style="width: 18rem">
+        <div class="card bg-black" data-aos="flip-left" data-aos-duration="1000" style="width: 18rem">
           <!-- <img src="..." class="card-img-top" alt="..." /> -->
           <i class="fa-solid fa-computer icon-service"></i>
           <div class="card-body">
@@ -147,7 +154,7 @@
             </p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem" data-aos="flip-left" data-aos-duration="1000">
           <i class="fa-solid fa-server icon-service"></i>
           <div class="card-body">
             <h3 class="card-title">Back-end Development</h3>
@@ -157,7 +164,7 @@
             </p>
           </div>
         </div>
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem" data-aos="flip-left" data-aos-duration="1000">
           <i class="fa-solid fa-database icon-service"></i>
           <div class="card-body">
             <h3 class="card-title">Data Analysis</h3>
@@ -199,7 +206,7 @@
     <!-- skills section  -->
     <div class="skills" id="skills">
       <div class="heading"><h2>My Core Skills</h2></div>
-      <div class="container-skill container">
+      <div class="container-skill container" data-aos="zoom-in" data-aos-duration="1000">
         <div class="skill-card">
           <img src="/images/html.svg" alt="html" />
         </div>
@@ -257,7 +264,7 @@
         </div>
       </div>
       <div class="container individual-skill">
-        <div class="skill-cardlist">
+        <div class="skill-cardlist" data-aos="zoom-in-down" data-aos-duration="1000">
           <div class="heading"><h3>Front-End</h3></div>
           <div class="skill-list">
             <ul>
@@ -310,7 +317,7 @@
             </ul>
         </div>
       </div>
-       <div class="skill-cardlist">
+       <div class="skill-cardlist" data-aos="zoom-in-down" data-aos-duration="1000">
           <div class="heading"><h3>Back-End</h3></div>
           <div class="skill-list">
             <ul>
@@ -363,7 +370,7 @@
             </ul>
         </div>
       </div>
-       <div class="skill-cardlist">
+       <div class="skill-cardlist" data-aos="zoom-in-down" data-aos-duration="1000">
           <div class="heading"><h3>Data-Analytics</h3></div>
           <div class="skill-list">
             <ul>
@@ -511,18 +518,12 @@
     </div>
     <!-- project section end -->
 
-    <!-- contact section -->
-    <!-- <div class="container contact">
-      <div class="heading"><h3><span>L</span>et's<span>C</span> onnect</h3></div>
-      <div class="heading"><h4>Ready to Bring Your Ideas to Life <span>?</span></h4></div>
-      <div class="para"><p>Let's collaborate to build reliable, scalable, and innovative web solutions. Available for freelance projects and full-time opportunities.</p></div>
-      
-    </div> -->
+  
 <!-- contact section -->
 <div class="container contact my-5" id="contact">
   <div class="heading text-center">
     <h3><span>L</span>et's <span>C</span>onnect</h3>
-    <h4>Ready to Bring Your Ideas to Life <span>?</span></h4>
+    <h4>Ready to Bring Your Ideas to Life <span class="animate__animated animate__bounceIn animate__delay-2s animate__infinite">?</span></h4>
   </div>
   <div class="para text-center mb-4">
     <p>
@@ -563,7 +564,8 @@
  <p>Made by - <span>R</span>ishabh <span>S</span>inghal </p>
 </div>
 
-
+    <!-- cdn for aos -->
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- cdn for bootstrap js -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
