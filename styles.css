@@ -395,6 +395,12 @@ form button:hover {
     }
 }
 
+/* chatboat styling can be used when using chatbot functionality */
+/* #chat-container { width: 300px; border: 1px solid #ccc; padding: 10px; }
+#messages { height: 200px; overflow-y: auto; margin-bottom: 10px; }
+.user { color:#ffc107; }
+.bot { color: white; } */
+
 /* responsiveness */
 @media screen and (max-width: 768px) {
   .navbar-typewriter {
